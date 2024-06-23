@@ -1,7 +1,9 @@
-name: "poc-terraform"
+name: "Terraform Apply"
 
 on:
-  pull_request:
+  push:
+    branches:
+      - main
 
 env:
   TF_CLOUD_ORGANIZATION: "POC-dcarrillo"
