@@ -1,13 +1,13 @@
 terraform {
-  
-    cloud {
-      organization = "POC-dcarrillo"
 
-      workspaces {
-        name = "poc"
-      }
+  cloud {
+    organization = "POC-dcarrillo"
+
+    workspaces {
+      name = "poc"
     }
-    required_providers {
+  }
+  required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "5.54.1"
@@ -18,5 +18,5 @@ terraform {
 
 
 provider "aws" {
-   region = "us-east-1"
+  region = "us-east-1"
 }
