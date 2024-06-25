@@ -7,7 +7,7 @@ locals {
   }
 
   poc_lambda_template_base = {
-    name           = "poc-template-base"
+    name           = "poc-lambda-template-base"
     lambda_handler = "build/src/handler.handler"
   }
 }
